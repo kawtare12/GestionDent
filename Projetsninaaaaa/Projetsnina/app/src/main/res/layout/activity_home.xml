@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/purple"
+    tools:context=".HomeActivity">
+
+
+
+    <!-- Bouton de Choisir -->
+
+    <!-- ImageView -->
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/purple2"
+        android:elevation="4dp"
+        android:onClick="choosePhoto"
+        android:text="Choisir une image"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="364dp"
+        android:layout_height="384dp"
+        android:layout_below="@id/btnSelectImage"
+        android:background="@android:color/primary_text_dark"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Les angles mesurés: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textColor="#4B0082" />
+
+
+    <TextView
+        android:id="@+id/anglesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:textColor="#333" />
+
+    <TextView
+        android:id="@+id/anglesTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/anglesTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:textColor="#333" />
+    <Button
+        android:id="@+id/btnSubmitTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple2"
+        android:elevation="4dp"
+        android:text="Soumettre TP"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+
+
+
+</RelativeLayout>
